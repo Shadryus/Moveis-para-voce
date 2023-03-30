@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Open+Sans:wght@300&display=swap');
+
+h1{
+  font-family: "Inter";
+  color: #000000;
+}
+
+span{
+  color: #FF9900;
+}
+
+footer{
+  color: #FF9900;
+}
