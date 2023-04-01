@@ -1,25 +1,66 @@
+/* Importa as fontes Open Sans 400/700 e Inter 400/700 */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
 body{
   font-family: "Open Sans", sans-serif;
+  margin: 0;
+
+  /* Centraliza os elementos */
   text-align: center;
 }
 
+#hero{
+  width: 592px;
+
+  /* Define margin top = 0, right/left = automático(centraliza) e bottom = 72px */
+  margin: 0 auto 72px; 
+}
+
+#hero img{
+  margin-bottom: 72px;
+}
+
+/* Estilo do titulo */
 h1{
   font-family: "Inter", sans-serif;
   font-size: 49px;
   line-height: 56px;
   font-weight: normal;
+  margin-bottom: 32px;
 }
 
+/* Todos os <span> em <h1> estarão em negrito */
 h1 span{
   font-weight: bold;
 }
 
+/* Os <span> e <a> terão cor laranja */
 span, a {
   color: #FF9900;
 }
 
-p{
+
+p, #footer{
   color: #7d7987;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+/* Dentro da div footer o <a> que tem um <a> antes tera margin-left de 28px */
+#footer a + a{
+  margin-left: 28px;
+}
+
+/* Linha acima dos links do rodapé*/
+.line{
+  width: 568px;
+  height: 0px; /* Não tem altura por ser só uma linha */
+  margin: 0 auto 8px;
+  border: 1px #ECEFF2 solid;
+}
+
+#balls{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
 }
