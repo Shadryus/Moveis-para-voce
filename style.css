@@ -1,37 +1,55 @@
+:root{
+  font-size: 62.5%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* Importa as fontes Open Sans 400/700 e Inter 400/700 */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
 body{
   font-family: "Open Sans", sans-serif;
-  margin: 0;
-
+  padding: 6.0rem 2.0rem;
   /* Centraliza os elementos */
   text-align: center;
+  display: flex;
+}
+
+.page{
+  max-width: 33.0rem;
+  margin: 0 auto;
+
 }
 
 #hero{
-  width: 592px;
+  max-width: 59.2rem;
 
   /* Define margin top = 0, right/left = automático(centraliza) e bottom = 72px */
-  margin: 0 auto 72px; 
+  margin: 0 auto 7.2rem; 
 }
 
+
+
 #hero img{
-  margin-bottom: 72px;
+  margin-bottom: 7.2rem;
 }
 
 /* Estilo do titulo */
 h1{
   font-family: "Inter", sans-serif;
-  font-size: 49px;
-  line-height: 56px;
+  font-size: 4.9rem;
+  line-height: 5.6rem;
   font-weight: normal;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 
 /* Todos os <span> em <h1> estarão em negrito */
 h1 span{
   font-weight: bold;
+  display: block;
 }
 
 /* Os <span> e <a> terão cor laranja */
@@ -42,20 +60,20 @@ span, a {
 
 p, #footer{
   color: #7d7987;
-  font-size: 14px;
-  line-height: 28px;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
 }
 
 /* Dentro da div footer o <a> que tem um <a> antes tera margin-left de 28px */
 #footer a + a{
-  margin-left: 28px;
+  margin-left: 2.8rem;
 }
 
 /* Linha acima dos links do rodapé*/
 .line{
-  width: 568px;
+  max-width: 56.8rem;
   height: 0px; /* Não tem altura por ser só uma linha */
-  margin: 0 auto 8px;
+  margin: 0 auto 0.8rem;
   border: 1px #ECEFF2 solid;
 }
 
@@ -63,4 +81,18 @@ p, #footer{
   position: fixed;
   bottom: 0px;
   right: 0px;
+}
+
+@media(min-width: 500px){
+  .page{
+    max-width: 100vw;
+  }
+
+  body{
+    padding: 0;
+  }
+
+  h1 span{
+    display: inline;
+  }
 }
